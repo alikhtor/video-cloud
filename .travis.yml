@@ -6,12 +6,11 @@ before_install:
 - npm install -g @angular/cli
 install: npm install
 
-branches:
-  only:
-  - master
-
 deploy:
   provider: heroku
   api_key:
     secure: "2d5541b5-14af-41ee-8feb-300f831c06a7"
   app: video-cloud
+  on:
+    all_branches: true
+    tags: true
