@@ -15,10 +15,10 @@
     flex-flow: row wrap;
 }
 
-.show {
+/* .show {
     display: flex;
     box-shadow: 0 0 18px rgba(80, 5, 5, 0.8);
     border-radius: 10px;
     overflow: hidden;
     align-items: center;
-}
+} */

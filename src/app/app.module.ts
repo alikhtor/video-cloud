@@ -8,27 +8,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './common/material/material.module';
 
 import { ApiService } from './services/api.service';
-import { RecomendedShowService } from './services/recomended-show.service';
 
 import { AppComponent } from './app.component';
 import { ShowComponent } from './show/show.component';
-import { RecomendedShowComponent } from './recomended-show/recomended-show.component';
 import { HeaderComponent } from './header/header.component';
-import { LastShowsComponent } from './last-shows/last-shows.component';
-import { RandomShowsComponent } from './random-shows/random-shows.component';
-import { ScheduleComponent } from './schedule/schedule.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    ScheduleComponent,
-    RecomendedShowComponent,
-    LastShowsComponent,
-    RandomShowsComponent,
-    ShowComponent
+    ShowComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -39,8 +30,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
     AppRoutingModule
   ],
   providers: [
-    ApiService,
-    RecomendedShowService
+    ApiService
   ],
   bootstrap: [AppComponent]
 })

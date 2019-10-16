@@ -15,7 +15,11 @@ export class ApiService {
   }
 
   getShow(id: number) {
-    return this.httpClient.get(`${URL}/shows/${id}`)
+    return this.httpClient.get(`${URL}/shows/${id}`);
   }
-
+  
+  getSeasons(id: number) {
+    return this.httpClient.get(`${URL}/shows/${id}/seasons`)
+  }
 }
+ 
