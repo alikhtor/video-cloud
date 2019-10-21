@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../services/api.service';
 import { ISchedule } from '../models/schedule/i-schedule';
 import { Observable } from 'rxjs';
+// import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
+// import { MatCarouselSlide, MatCarouselSlideComponent } from '@ngmodule/material-carousel';
+
 
 @Component({
   selector: 'app-schedule',
@@ -18,7 +21,8 @@ export class ScheduleComponent implements OnInit {
   ngOnInit() {
   }
 
-  addToLocal(scheduleShow: ISchedule) {
-    console.log(scheduleShow);
+  getShow(show) {
+    console.log(show);
+    
   }
 }

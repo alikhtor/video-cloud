@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './common/material/material.module';
@@ -18,6 +18,8 @@ import { PopularComponent } from './popular/popular.component';
 import { PageShowComponent } from './page-show/page-show.component';
 import { PageEpisodesComponent } from './page-episodes/page-episodes.component';
 import { PageSeasonsComponent } from './page-seasons/page-seasons.component';
+import { ShowSeasonsComponent } from './page-show/show-seasons/show-seasons.component';
+import { ShowEpisodesComponent } from './page-show/show-episodes/show-episodes.component';
 
 
 
@@ -31,15 +33,17 @@ import { PageSeasonsComponent } from './page-seasons/page-seasons.component';
     PopularComponent,
     PageShowComponent,
     PageEpisodesComponent,
-    PageSeasonsComponent
+    PageSeasonsComponent,
+    ShowSeasonsComponent,
+    ShowEpisodesComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    NgbModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCarouselModule.forRoot(),
   ],
   providers: [
     ApiService
