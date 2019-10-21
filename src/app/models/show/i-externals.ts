@@ -1,5 +1,5 @@
 export interface IExternals {
-    tvrage: number
-    thetvdb: number
-    imdb: string
+    tvrage: number;
+    thetvdb: number;
+    imdb: string;
 }

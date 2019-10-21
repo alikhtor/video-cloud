@@ -1,4 +1,4 @@
 export interface ISchedule {
-    time: string
-    days: Array<string>
+    time: string;
+    days: Array<string>;
 }

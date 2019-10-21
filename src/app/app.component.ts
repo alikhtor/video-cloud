@@ -1,5 +1,4 @@
-import { Component, Output, Input, EventEmitter } from '@angular/core';
-import { IShow } from './models/show/i-show';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',

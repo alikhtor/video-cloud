@@ -1,3 +1,3 @@
 export interface IRating {
-    average: number
+    average: number;
 }

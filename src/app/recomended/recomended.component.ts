@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api-service/api.service';
+import { ApiService } from '../services/api.service';
 import { IShow } from '../models/show/i-show';
 import { Observable } from 'rxjs';
 
@@ -9,9 +9,9 @@ import { Observable } from 'rxjs';
   styleUrls: ['./recomended.component.css']
 })
 export class RecomendedComponent implements OnInit {
-  powerPuffGirlsId: number = 6771;
+  powerPuffGirlsId = 6771;
   show$: Observable<IShow>;
-  
+
   constructor(private apiService: ApiService) {
     this.show$ = this.apiService.getShow(this.powerPuffGirlsId);
   }

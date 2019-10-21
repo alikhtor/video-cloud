@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { PageShowComponent } from './page-show/page-show.component';
 
 
 const routes: Routes = [
@@ -11,13 +12,17 @@ const routes: Routes = [
   // { path: 'login', component: LoginPage },
   // { path: 'account', loadChildren: () => import('./account/account.module').then(m => m.AccountModule) },
   {
+    path: 'show/:id',
+    component: PageShowComponent
+  },
+  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
     path: '**',
-    redirectTo: 'home',
+    redirectTo: '/home',
     pathMatch: 'full'
   }
 ];

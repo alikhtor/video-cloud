@@ -1,3 +1,3 @@
 export interface ILink {
-    href: string
+    href: string;
 }

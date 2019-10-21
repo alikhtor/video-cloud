@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
-import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 import { IShow } from '../models/show/i-show';
 import { ISchedule } from '../models/schedule/i-schedule';
-import { take } from 'rxjs/operators';
 
-const URL: string = 'http://api.tvmaze.com';
+const URL = 'http://api.tvmaze.com';
 
 @Injectable({
   providedIn: 'root'
@@ -21,9 +19,8 @@ export class ApiService {
   getShow(id: number) {
     return this.httpClient.get<IShow>(`${URL}/shows/${id}`);
   }
-  
+
   getSeasons(id: number) {
-    return this.httpClient.get(`${URL}/shows/${id}/seasons`)
+    return this.httpClient.get(`${URL}/shows/${id}/seasons`);
   }
 }
- 
