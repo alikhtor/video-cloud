@@ -7,19 +7,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './common/material/material.module';
 
-import { ApiService } from './services/api.service';
+import { ApiService } from './api-service/api.service';
 
 import { AppComponent } from './app.component';
-import { ShowComponent } from './show/show.component';
 import { HeaderComponent } from './header/header.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { RecomendedComponent } from './recomended/recomended.component';
+import { LastFiveShowsSeenComponent } from './last-five-shows-seen/last-five-shows-seen.component';
+import { PopularComponent } from './popular/popular.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowComponent,
-    HeaderComponent
+    HeaderComponent,
+    ScheduleComponent,
+    RecomendedComponent,
+    LastFiveShowsSeenComponent,
+    PopularComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,13 @@
 <app-header></app-header>
 <section class="schedule">
-    <mat-grid-list cols="4" rowHeight="150px">
-        <!-- <mat-grid-tile *ngFor="let show of smallShelude" [style.backgroundImage]="'url('+ show.image?.original +')'">
-            {{single.name}}
-        </mat-grid-tile> -->
-    </mat-grid-list>
+    <app-schedule></app-schedule>
+</section>
+<section class="recomended">
+    <app-recomended></app-recomended>
+</section>
+<section class="last-shows">
+    <app-last-five-shows-seen></app-last-five-shows-seen>
+</section>
+<section class="popular">
+    <app-popular></app-popular>
 </section>
