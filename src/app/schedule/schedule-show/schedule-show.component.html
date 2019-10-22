@@ -1,0 +1,9 @@
+<div class="schedule-image" [ngStyle]="{'background-image': 'url('+ scheduleShow.show.image?.original +')'}">
+    <div class="schedule-inner">
+        <div class="schedule-body">
+            <div class="schedule-top-line">{{scheduleShow.airdate | date}} at {{scheduleShow.airtime}}</div>
+            <div class="schedule-subtitle">{{scheduleShow.name}}</div>
+            <div class="schedule-paragraph" [innerHtml]="scheduleShow.summary"></div>
+        </div>
+    </div>
+</div>

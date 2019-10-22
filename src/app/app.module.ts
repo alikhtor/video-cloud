@@ -20,6 +20,7 @@ import { PageEpisodesComponent } from './page-episodes/page-episodes.component';
 import { PageSeasonsComponent } from './page-seasons/page-seasons.component';
 import { ShowSeasonsComponent } from './page-show/show-seasons/show-seasons.component';
 import { ShowEpisodesComponent } from './page-show/show-episodes/show-episodes.component';
+import { ScheduleShowComponent } from './schedule/schedule-show/schedule-show.component';
 
 
 
@@ -35,7 +36,8 @@ import { ShowEpisodesComponent } from './page-show/show-episodes/show-episodes.c
     PageEpisodesComponent,
     PageSeasonsComponent,
     ShowSeasonsComponent,
-    ShowEpisodesComponent
+    ShowEpisodesComponent,
+    ScheduleShowComponent
   ],
   imports: [
     BrowserModule,

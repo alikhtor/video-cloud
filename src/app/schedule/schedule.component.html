@@ -1,6 +1,8 @@
 <h2>Scheduler</h2>
-<mat-carousel maxWidth="70%" loop="true" autoplay="true" proportion="50">
-    <mat-carousel-slide *ngFor="let show of scheduleShows$ | async | slice:0:5">
-        <a (click)="getShow(show)">{{ show | json }}</a>
-    </mat-carousel-slide>
-  </mat-carousel>
+<div class="schedule">
+    <mat-carousel maxWidth="100%" proportion="50">
+        <mat-carousel-slide *ngFor="let scheduleShow of scheduleShowsArray">
+            <app-schedule-show [scheduleShow]="scheduleShow"></app-schedule-show>
+        </mat-carousel-slide>
+    </mat-carousel>
+</div>

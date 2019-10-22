@@ -1,0 +1,38 @@
+.schedule-image {
+    background-size: cover;
+    background-position: center center;
+    height: 1000px;
+}
+
+.schedule-inner {
+    border: 50px solid transparent;
+    border-width: 0 50px;
+}
+
+.schedule-body {
+    width: 60%;
+}
+
+.schedule-top-line {
+    font-size: 30px;
+    line-height: 85px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-family: ff-din-web,Calibri,Arial,sans-serif;
+    color: red;
+}
+
+.schedule-subtitle {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0;
+    color: red;
+}
+
+.schedule-paragraph {
+    font-size: 14;
+    line-height: 18px;
+    margin: 0;
+    color: red;
+}

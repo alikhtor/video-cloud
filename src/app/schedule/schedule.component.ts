@@ -13,16 +13,15 @@ import { Observable } from 'rxjs';
 })
 export class ScheduleComponent implements OnInit {
   scheduleShows$: Observable<ISchedule[]>;
+  scheduleShowsArray: ISchedule[];
 
   constructor(private apiService: ApiService) {
     this.scheduleShows$ = this.apiService.getSchedule();
   }
 
   ngOnInit() {
-  }
-
-  getShow(show) {
-    console.log(show);
-    
+    this.scheduleShows$.subscribe((ss) => {
+      this.scheduleShowsArray = ss.slice(0, 5);
+    });
   }
 }

@@ -1,0 +1,10 @@
+.schedule {
+    overflow: hidden;
+    background: #FFF;
+    color: #000101;
+    text-align: left;
+}
+
+.schedule, .schedule>* {
+    position: relative;
+}
