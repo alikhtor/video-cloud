@@ -10,7 +10,7 @@ import { IShow } from '../models/show/i-show';
 })
 export class LastShowsListComponent implements OnInit {
   shows$: Observable<IShow>;
-  shows = [];
+  // shows = [];
 
   constructor(
     private readonly lSService: LocalStorageService

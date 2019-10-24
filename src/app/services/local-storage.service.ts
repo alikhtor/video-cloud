@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { IShow } from '../models/show/i-show';
 import { ApiService } from './api.service';
 import { from } from 'rxjs';
-import { concatMap } from 'rxjs/operators';
+import { concatMap, map, mergeAll } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -37,7 +37,8 @@ export class LocalStorageService {
     const storage = localStorage.getItem(this.storageKey).split(',');
     if (storage.length > 0) {
       return from(storage).pipe(
-        concatMap(id => this.apiService.getShow(Number(id)))
+        map(id => this.apiService.getShow(Number(id))),
+        mergeAll()
       );
     }
   }
