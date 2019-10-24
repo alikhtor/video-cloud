@@ -1,2 +1,16 @@
 <h2>Recomended</h2>
-<div>{{show$ | async | json}}</div>
+<div class="r-block">
+    <div class="info">
+        <h2 class="show-title">
+            {{ show?.name }}
+        </h2>
+        <h4 class="show-type">
+            {{ show?.type }}
+        </h4>
+    </div>
+    <div class="show-image">
+        <img src="{{ show?.image.medium}}">
+    </div>
+    <div class="show-summary" [innerHtml]="show?.summary">
+    </div>
+</div>

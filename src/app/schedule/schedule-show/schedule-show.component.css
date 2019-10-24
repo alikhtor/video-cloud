@@ -4,6 +4,12 @@
     height: 1000px;
 }
 
+.shadow {
+    -moz-box-shadow:    inset 0 0 10000px #000000;
+    -webkit-box-shadow: inset 0 0 10000px #000000;
+    box-shadow:         inset 0 0 10000px #000000;
+ }
+
 .schedule-inner {
     border: 50px solid transparent;
     border-width: 0 50px;
@@ -11,6 +17,7 @@
 
 .schedule-body {
     width: 60%;
+    cursor: pointer;
 }
 
 .schedule-top-line {
@@ -20,19 +27,19 @@
     padding-bottom: 10px;
     font-weight: 600;
     font-family: ff-din-web,Calibri,Arial,sans-serif;
-    color: red;
+    color: #ffffff;
 }
 
 .schedule-subtitle {
     font-size: 22px;
     line-height: 28px;
     margin: 0;
-    color: red;
+    color: #ffffff;
 }
 
 .schedule-paragraph {
     font-size: 14;
     line-height: 18px;
     margin: 0;
-    color: red;
+    color: #ffffff;
 }

@@ -13,14 +13,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { RecomendedComponent } from './recomended/recomended.component';
-import { LastFiveShowsSeenComponent } from './last-five-shows-seen/last-five-shows-seen.component';
-import { PopularComponent } from './popular/popular.component';
-import { PageShowComponent } from './page-show/page-show.component';
-import { PageEpisodesComponent } from './page-episodes/page-episodes.component';
-import { PageSeasonsComponent } from './page-seasons/page-seasons.component';
 import { ShowSeasonsComponent } from './page-show/show-seasons/show-seasons.component';
 import { ShowEpisodesComponent } from './page-show/show-episodes/show-episodes.component';
 import { ScheduleShowComponent } from './schedule/schedule-show/schedule-show.component';
+import { HomeComponent } from './home/home.component';
+import { PageShowComponent } from './page-show/page-show.component';
+import { LastShowsListComponent } from './last-shows-list/last-shows-list.component';
 
 
 
@@ -28,16 +26,14 @@ import { ScheduleShowComponent } from './schedule/schedule-show/schedule-show.co
   declarations: [
     AppComponent,
     HeaderComponent,
+    HomeComponent,
     ScheduleComponent,
     RecomendedComponent,
-    LastFiveShowsSeenComponent,
-    PopularComponent,
     PageShowComponent,
-    PageEpisodesComponent,
-    PageSeasonsComponent,
     ShowSeasonsComponent,
     ShowEpisodesComponent,
-    ScheduleShowComponent
+    ScheduleShowComponent,
+    LastShowsListComponent
   ],
   imports: [
     BrowserModule,

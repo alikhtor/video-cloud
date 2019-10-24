@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { PageShowComponent } from './page-show/page-show.component';
 import { ShowSeasonsComponent } from './page-show/show-seasons/show-seasons.component';
 import { ShowEpisodesComponent } from './page-show/show-episodes/show-episodes.component';
@@ -8,25 +8,27 @@ import { ShowEpisodesComponent } from './page-show/show-episodes/show-episodes.c
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
     path: 'home',
-    component: AppComponent
+    component: HomeComponent
   },
   {
     path: 'show/:id',
     component: PageShowComponent,
-    children : [
+    children: [
       {
-        path: 'episodes', component: ShowEpisodesComponent
+        path: 'seasons',
+        component: ShowSeasonsComponent
       },
       {
-        path: 'seasons', component: ShowSeasonsComponent
+        path: 'episodes',
+        component: ShowEpisodesComponent
       }
     ]
-  },
-  {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
   },
   {
     path: '**',

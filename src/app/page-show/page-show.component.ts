@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-show',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageShowComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private readonly router: Router,
+    private readonly route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
   }
 
+  onSeasons() {
+    this.router.navigate(['seasons'], {relativeTo: this.route});
+  }
+
+  onEpisodes() {
+    this.router.navigate(['episodes'], {relativeTo: this.route});
+  }
 }

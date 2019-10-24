@@ -11,12 +11,15 @@ import { Observable } from 'rxjs';
 export class RecomendedComponent implements OnInit {
   powerPuffGirlsId = 6771;
   show$: Observable<IShow>;
+  show: IShow;
 
   constructor(private apiService: ApiService) {
     this.show$ = this.apiService.getShow(this.powerPuffGirlsId);
   }
 
   ngOnInit() {
+    this.show$.subscribe((show) => {
+      this.show = show;
+    });
   }
-
 }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PopularComponent } from './popular.component';
+import { LastShowsListComponent } from './last-shows-list.component';
 
-describe('PopularComponent', () => {
-  let component: PopularComponent;
-  let fixture: ComponentFixture<PopularComponent>;
+describe('LastShowsListComponent', () => {
+  let component: LastShowsListComponent;
+  let fixture: ComponentFixture<LastShowsListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PopularComponent ]
+      declarations: [ LastShowsListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PopularComponent);
+    fixture = TestBed.createComponent(LastShowsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
