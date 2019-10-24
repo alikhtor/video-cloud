@@ -3,10 +3,6 @@ language: node_js
 node_js:
 - '10'
 
-branches:
-  only:
-  - /^deploy-.*$/
-
 before_install:
 - npm install -g @angular/cli
 install: npm install
@@ -17,3 +13,5 @@ deploy:
   api_key:
     secure: cgmp4BqhdkkI4lOO+KDhWCZKdAGFtapibymOFmKtJmMrOgeVHTRDIufRYPCploZieXcN652DYLz1EkZzy7C/h6kn3X/BE+vKzHyWm0RLy7ooK68FoWJv+SuaTY5M2Sb2/lNWm4xRxwrngZYPU+IregH66JRxjRo5ENHHMglYt3If/41kZD/IUQK17rDC/SAn8wD1R/NCXvLB4p65hggWGV3RbzliNUE0VX4OBkIkbYsu5VEr2OBJhJXRPcnHMIM4Y9qEySDAYqa1P138NKFDEGn1CTADiKFGIk2pinFPdI12xHlMpZ1GMhF6Kq5DdSIfhch4Duac+Cgm1pgTv50gYfCLoX95FJ2ntyaLTzU9OMoTeTibhOeDSmt29WPW+vgu6CHAfyUzC6swnQleRc5iM2zcMPpbBx3xugvES0BzE0nEJUVvOxI3EyUquJYspfYJ9mI3p4LgIgfEraEw1kg0CQnLyNKKLgQZuCBgds/Fs3Lj06kQQ82Y14i1sr5E20CC8tcdSLcHXf1PGm4IydlmYIZLQ9sWBXnSsItiKHDW3bF6W4bLR5fjp9RgvwaZ+8pofb85QCvQgMTaKfKiKIpY0bpUTMB5DltpzEevUoZEWV9a+txTpgP/ACWUyZKY+rEQT3hONV7GhjolGlTf6DVw/bzPOC65cQ/BZ3KNf4OSnvk=
   app: video-cloud
+  on:
+    all_branches: true
