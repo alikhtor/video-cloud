@@ -20,7 +20,7 @@ export class ScheduleComponent implements OnInit {
 
   ngOnInit() {
     this.scheduleShows$.subscribe((ss) => {
-      this.scheduleShowsArray = ss.slice(0, 5);
+      this.scheduleShowsArray = ss;
     });
   }
 
