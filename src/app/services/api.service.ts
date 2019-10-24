@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { IShow } from '../models/show/i-show';
 import { ISchedule } from '../models/schedule/i-schedule';
 
-const URL = 'http://api.tvmaze.com';
+const URL = 'https://api.tvmaze.com';
 
 @Injectable({
   providedIn: 'root'
